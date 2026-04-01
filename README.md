@@ -1,4 +1,4 @@
-# SSB-T1-C12-EVEN
+# SSB-SC
 
 ---
 
