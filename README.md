@@ -31,8 +31,39 @@ PROCEDURE:
 6.Verify the generated results
 
 PROGRAM:
+```
+clc;
+clear;
+close;
+Am=18.1;
+Ac=36.2;
+fm=646;
+fc=6460;
+fs=56700;
+wm=2*3.14*fm;
+wc=2*3.14*fc;
+t=0:1/fs:2/fm;
+m1=Am*cos(wm*t);
+m2=Am*cos(1.57-(wm*t));
+subplot(4,1,1);
+plot(t,m1);
+c1=Ac*cos(wc*t);
+c2=Ac*cos(1.57-(wc*t));
+subplot(4,1,2);
+plot(t,c1);
+s1=c1.*m1;
+s2=c2.*m2;
+Slsb=s1+s2;
+subplot(4,1,3);
+plot(t,Slsb);
+Susb=s1-s2;
+subplot(4,1,4);
+plot(t,Susb);
 
+```
 OUTPUT GRAPH:
+<img width="1920" height="1200" alt="Screenshot 2026-03-22 145922" src="https://github.com/user-attachments/assets/0beb777d-3ac4-4954-91d2-c1f2b17cf471" />
+
 
 RESULT:
 
