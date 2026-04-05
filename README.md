@@ -90,3 +90,4 @@ plot(t,Susb);
 
 ## RESULT:
 Thus the mean, variance, and cross-correlation were computed using SCILAB and the results were verified successfully.
+https://github.com/Yadhav7010/DSBSC-Scilab.git
